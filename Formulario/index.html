@@ -15,16 +15,16 @@
     <link href="/src/styles.css" rel="stylesheet">
   </head>
   <body
-    class="w-screen h-screen flex flex-col justify-center items-center bg-gradient-to-br from-[#3C3B49] to-[#161525]"
+    class="flex justify-center items-center bg-gradient-to-br from-[#3C3B49] to-[#161525] overflow-hidden"
   >
     <!--texto arriba-->
 
     <main
-      class="w-[70%] h-[90%] lg:w-[60%] bg-gradient-to-br from-[#3C3B49] to-[#161525] relative z-2 rounded-2xl outline-2 outline-[rgba(255,255,255,0.2)] shadow-[0_0px_30px_rgba(255,255,255,0.2)] transition-all duration-200"
+      class="flex flex-col justify-center items-center w-[70%] lg:w-[20%] 2xl:w-[50%] bg-gradient-to-br from-[#3C3B49] to-[#161525] rounded-2xl outline-2 outline-[rgba(255,255,255,0.2)] shadow-[0_0px_30px_rgba(255,255,255,0.2)] transition-all duration-200 overflow-hidden"
     >
       <!-- CABECERA -->
       <div
-        class="bg-[#363543] w-full h-[70px] top-0 rounded-tl-2xl rounded-tr-2xl shadow-2xl flex items-center justify-center"
+        class="bg-[#363543] top-0 rounded-tl-2xl rounded-tr-2xl shadow-2xl flex items-center justify-center p-[20px] w-full"
       >
         <h1
           class="animate__animated animate__pulse animate__delay-2s text-2xl sm:text-3xl xl:text-5xl lg:text-4xl text-white font-bold text-shadow-[0_0px_10px_rgba(255,255,255,0.3)]"
@@ -33,9 +33,10 @@
         </h1>
       </div>
       <!--FOTO PERFIL-->
-      <form action="Creditos.html">
+      
+      <form class="w-full h-full" action="Creditos.html" class="">
         <div
-          data-aos="fade-down"
+          
           class="w-full flex flex-col justify-center items-center p-[20px]"
         >
           <img
@@ -44,15 +45,13 @@
             alt="icon-person"
           />
         </div>
-        <!--DATOS PERSONALES-->
+        <!--NOMBRE Y NUMERO-->
         <div
           class="flex flex-col lg:flex justify-center items-center lg:flex-row gap-5.5 lg:px-[50px]"
         >
           <!--nombre-->
           <div
-            data-aos="fade-up"
-            data-aos-duration="1000"
-            data-aos-delay="400"
+            
             class="w-[70%] h-full flex justify-center items-center lg:flex-col lg:items-start"
           >
             <h3
@@ -61,25 +60,18 @@
               Nombre Completo
             </h3>
             <input
-              class="w-full h-[40px] bg-[#53535F] focus:bg-[#252434] rounded-xl outline-2 outline-[rgba(255,255,255,0.2)] focus:shadow-[0_0px_20px_rgba(255,255,255,0.2)] transition-all duration-200 text-white p-[10px] focus:outline-2 focus:outline-[rgba(255,255,255,0.5)] lg:hidden"
+              class="w-full h-[40px] bg-[#53535F] focus:bg-[#252434] rounded-xl outline-2 outline-[rgba(255,255,255,0.2)] focus:shadow-[0_0px_20px_rgba(255,255,255,0.2)] transition-all duration-200 text-white p-[10px] focus:outline-2 focus:outline-[rgba(255,255,255,0.5)] "
               type="text"
               placeholder="Nombre Completo"
               required
             />
 
-            <input
-              class="hidden lg:flex w-full h-[40px] bg-[#53535F] focus:bg-[#252434] rounded-xl outline-2 outline-[rgba(255,255,255,0.2)] focus:shadow-[0_0px_20px_rgba(255,255,255,0.2)] transition-all duration-200 text-white p-[10px] focus:outline-2 focus:outline-[rgba(255,255,255,0.5)]"
-              type="text"
-              placeholder=""
-              required
-            />
+            
           </div>
 
           <!--telefono-->
           <div
-            data-aos="fade-up"
-            data-aos-duration="1000"
-            data-aos-delay="500"
+            
             class="w-[70%] h-full flex justify-center items-center lg:flex-col lg:items-start"
           >
             <h3
@@ -88,30 +80,23 @@
               Numero de Telefonico
             </h3>
             <input
-              class="w-full h-[40px] bg-[#53535F] focus:bg-[#252434] rounded-xl outline-2 outline-[rgba(255,255,255,0.2)] focus:shadow-[0_0px_20px_rgba(255,255,255,0.2)] transition-all duration-200 text-white p-[10px] focus:outline-2 focus:outline-[rgba(255,255,255,0.5)] lg:hidden"
+              class="w-full h-[40px] bg-[#53535F] focus:bg-[#252434] rounded-xl outline-2 outline-[rgba(255,255,255,0.2)] focus:shadow-[0_0px_20px_rgba(255,255,255,0.2)] transition-all duration-200 text-white p-[10px] focus:outline-2 focus:outline-[rgba(255,255,255,0.5)] "
               type="text"
               placeholder="Numero Telefonico"
               required
             />
 
-            <input
-              class="hidden lg:flex w-full h-[40px] bg-[#53535F] focus:bg-[#252434] rounded-xl outline-2 outline-[rgba(255,255,255,0.2)] focus:shadow-[0_0px_20px_rgba(255,255,255,0.2)] transition-all duration-200 text-white p-[10px] focus:outline-2 focus:outline-[rgba(255,255,255,0.5)]"
-              type="text"
-              placeholder=""
-              required
-            />
+            
           </div>
         </div>
 
-        <!--DATOS OTROS-->
+        <!--CORREO Y FECHA-->
         <div
           class="flex flex-col justify-center items-center lg:flex-row gap-5.5 lg:px-[50px] mt-[20px]"
         >
           <!--EMAIL-->
           <div
-            data-aos="fade-up"
-            data-aos-duration="1000"
-            data-aos-delay="600"
+            
             class="w-[70%] h-full flex justify-center items-center lg:flex-col lg:items-start"
           >
             <h3
@@ -120,25 +105,18 @@
               Correo Electronico
             </h3>
             <input
-              class="w-full h-[40px] bg-[#53535F] focus:bg-[#252434] rounded-xl outline-2 outline-[rgba(255,255,255,0.2)] focus:shadow-[0_0px_20px_rgba(255,255,255,0.2)] transition-all duration-200 text-white p-[10px] focus:outline-2 focus:outline-[rgba(255,255,255,0.5)] lg:hidden"
+              class="w-full h-[40px] bg-[#53535F] focus:bg-[#252434] rounded-xl outline-2 outline-[rgba(255,255,255,0.2)] focus:shadow-[0_0px_20px_rgba(255,255,255,0.2)] transition-all duration-200 text-white p-[10px] focus:outline-2 focus:outline-[rgba(255,255,255,0.5)] "
               type="text"
               placeholder="Correo Electronico"
               required
             />
 
-            <input
-              class="hidden lg:flex w-full h-[40px] bg-[#53535F] focus:bg-[#252434] rounded-xl outline-2 outline-[rgba(255,255,255,0.2)] focus:shadow-[0_0px_20px_rgba(255,255,255,0.2)] transition-all duration-200 text-white p-[10px] focus:outline-2 focus:outline-[rgba(255,255,255,0.5)]"
-              type="text"
-              placeholder=""
-              required
-            />
+            
           </div>
 
           <!--DATOS-->
           <div
-            data-aos="fade-up"
-            data-aos-duration="1000"
-            data-aos-delay="700"
+            
             class="w-[70%] h-full flex justify-center items-center lg:flex-col lg:items-start"
           >
             <h3
@@ -147,31 +125,22 @@
               Fecha de Nacimiento
             </h3>
             <input
-              class="w-full h-[40px] bg-[#53535F] focus:bg-[#252434] rounded-xl outline-2 outline-[rgba(255,255,255,0.2)] focus:shadow-[0_0px_20px_rgba(255,255,255,0.2)] transition-all duration-200 text-white p-[10px] focus:outline-2 focus:outline-[rgba(255,255,255,0.5)] lg:hidden"
+              class="w-full h-[40px] bg-[#53535F] focus:bg-[#252434] rounded-xl outline-2 outline-[rgba(255,255,255,0.2)] focus:shadow-[0_0px_20px_rgba(255,255,255,0.2)] transition-all duration-200 text-white p-[10px] focus:outline-2 focus:outline-[rgba(255,255,255,0.5)]"
               type="date"
               placeholder="Correo Electronico"
               required
             />
-
-            <input
-              class="hidden lg:flex w-full h-[40px] bg-[#53535F] focus:bg-[#252434] rounded-xl outline-2 outline-[rgba(255,255,255,0.2)] focus:shadow-[0_0px_20px_rgba(255,255,255,0.2)] transition-all duration-200 text-white p-[10px] focus:outline-2 focus:outline-[rgba(255,255,255,0.5)]"
-              type="date"
-              placeholder=""
-              required
-            />
           </div>
         </div>
-        <!--more datoos-->
+        
 
-        <!--DATOS LOCALIDAD-->
+        <!--DIRECCION Y POSTAL-->
         <div
           class="flex flex-col justify-center items-center lg:flex-row gap-5.5 lg:px-[50px] mt-[20px]"
         >
           <!--DIRECCION-->
           <div
-            data-aos="fade-up"
-            data-aos-duration="1000"
-            data-aos-delay="800"
+            
             class="w-[70%] h-full flex justify-center items-center lg:flex-col lg:items-start"
           >
             <h3
@@ -181,25 +150,18 @@
             </h3>
 
             <input
-              class="w-full h-[40px] bg-[#53535F] focus:bg-[#252434] rounded-xl outline-2 outline-[rgba(255,255,255,0.2)] focus:shadow-[0_0px_20px_rgba(255,255,255,0.2)] transition-all duration-200 text-white p-[10px] focus:outline-2 focus:outline-[rgba(255,255,255,0.5)] lg:hidden"
+              class="w-full h-[40px] bg-[#53535F] focus:bg-[#252434] rounded-xl outline-2 outline-[rgba(255,255,255,0.2)] focus:shadow-[0_0px_20px_rgba(255,255,255,0.2)] transition-all duration-200 text-white p-[10px] focus:outline-2 focus:outline-[rgba(255,255,255,0.5)] "
               type="text"
               placeholder="Dirección"
               required
             />
 
-            <input
-              class="hidden lg:flex w-full h-[40px] bg-[#53535F] focus:bg-[#252434] rounded-xl outline-2 outline-[rgba(255,255,255,0.2)] focus:shadow-[0_0px_20px_rgba(255,255,255,0.2)] transition-all duration-200 text-white p-[10px] focus:outline-2 focus:outline-[rgba(255,255,255,0.5)]"
-              type="text"
-              placeholder=""
-              required
-            />
+            
           </div>
 
           <!--DATOS-->
           <div
-            data-aos="fade-up"
-            data-aos-duration="1000"
-            data-aos-delay="900"
+            
             class="w-[70%] h-full flex justify-center items-center lg:flex-col lg:items-start"
           >
             <h3
@@ -208,32 +170,27 @@
               Codigo Postal
             </h3>
             <input
-              class="w-full h-[40px] bg-[#53535F] focus:bg-[#252434] rounded-xl outline-2 outline-[rgba(255,255,255,0.2)] focus:shadow-[0_0px_20px_rgba(255,255,255,0.2)] transition-all duration-200 text-white p-[10px] focus:outline-2 focus:outline-[rgba(255,255,255,0.5)] lg:hidden"
+              class="w-full h-[40px] bg-[#53535F] focus:bg-[#252434] rounded-xl outline-2 outline-[rgba(255,255,255,0.2)] focus:shadow-[0_0px_20px_rgba(255,255,255,0.2)] transition-all duration-200 text-white p-[10px] focus:outline-2 focus:outline-[rgba(255,255,255,0.5)] "
               type="text"
               placeholder="Codigo Postal"
               required
             />
 
-            <input
-              id="enviar"
-              class="hidden lg:flex w-full h-[40px] bg-[#53535F] focus:bg-[#252434] rounded-xl outline-2 outline-[rgba(255,255,255,0.2)] focus:shadow-[0_0px_20px_rgba(255,255,255,0.2)] transition-all duration-200 text-white p-[10px] focus:outline-2 focus:outline-[rgba(255,255,255,0.5)]"
-              type="text"
-              placeholder=""
-              required
-            />
+            
           </div>
         </div>
-
+        <!--BOTON ENVIAR-->
         <div
-          class="animate__animated animate__pulse animate__delay-2s flex flex-col justify-center items-center lg:flex-row gap-5.5 lg:px-[50px] mt-[20px] lg:mt-[40px] lg:px-[70px]"
+          class="relative animate__animated animate__pulse animate__delay-2s flex flex-col justify-center items-center p-[20px]"
         >
           <input
-            class="cursor-pointer w-[70%] h-[40px] bg-white hover:bg-[#252434] rounded-xl outline-2 outline-[rgba(255,255,255,0.2)] shadow-[0_0px_20px_rgba(255,255,255,0.2)] transition-all duration-200 text-[#252434] hover:text-white flex justify-center items-center font-bold"
+            class="cursor-pointer  w-[50%] h-[50px] lg:w-[50%] lg:h-[80px] bg-white hover:bg-[#252434] rounded-xl outline-2 outline-[rgba(255,255,255,0.2)] shadow-[0_0px_20px_rgba(255,255,255,0.2)] transition-all duration-200 text-[#252434] hover:text-white flex justify-center items-center font-bold"
             type="submit"
             value="ENVIAR DATOS"
           />
         </div>
       </form>
+    
     </main>
   </body>
   <script>
